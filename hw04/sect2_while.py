@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from hwtools import *
-
+"""
 print "Section 2:  Loops"
 print "-----------------------------"
 
@@ -26,4 +26,17 @@ print "2. Countdown from", num
 #    twos.  Otherwise, just countdown by ones.
 
 # num = int(raw_input("3. Countdown from: "))
+"""
+
+fig = 1
+
+while fig%3!=0:
+    fig = int(raw_input ("Enter a number, any number. Preferably divisible by three. "))
+count=fig
+while count>0:
+    count-=3
+    print count
+print "Wait no WHAT THE FUUUUUUU"
+
+
 

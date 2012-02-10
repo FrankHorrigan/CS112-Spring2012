@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from hwtools import *
-
+"""
 print "Section 3:  Lists"
 print "-----------------------------"
 
@@ -40,3 +40,17 @@ print "4.", nums
 # print "7.", nums[__]    # first 3 elements
 # print "8.", nums[__]    # last element
 # print "9.", nums[__]    # a list of the second element
+"""
+
+print "The numbers you input will be modified: the third will be replaced with a seven, and the numbers three and five will be appended to the end. five will then be removed."
+
+nums=input_nums()
+leng=int(len(nums))
+print "%i"% leng
+nums.append(3)
+nums.append(5)
+del nums[-1]
+del nums[3]
+nums.insert(3,7)
+print nums
+
