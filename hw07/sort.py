@@ -8,18 +8,21 @@ I used this:
 """
 from hwtools import input_nums
 
-nums = inputnums()
+nums = input_nums()
 
 print "Before sort:"
 print nums
 
-N=len(nums)-1
-for x in range(N)
-    p=x
-    for i in range(x+1 N):
-        if nums[i]<nums[p]:
-            pos=i
-   nums[x],nums[p]=nums[p],nums[x]
+#renamed variables for no raison.
+
+Knut=len(nums)
+for x in range(0,Knut):
+    test=x
+    for i in range(x+1, Knut):
+        if nums[i]<nums[test]:
+            test=i
+    nums[x],nums[test]=nums[test],nums[x]
+#There was A SPACE missing from the indentation of the above line. *grumble*
 
 print "After sort:"
 print nums
